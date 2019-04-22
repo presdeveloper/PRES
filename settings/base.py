@@ -37,17 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'apps.postmain', 
-    'apps.postmain.category', 
-    'apps.postmain.comment', 
-    'apps.postmain.post', 
-    'apps.postmain.postshare', 
-    'apps.postmain.textgenre', 
-
-    'apps.usermain',
-    'apps.usermain.notification',
-    'apps.usermain.user',
 ]
 
 MIDDLEWARE = [

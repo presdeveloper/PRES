@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pres</title>
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+
+<body>
+  {% block content %}
+  {% endblock %} 
+</body>
+
+<script src="{% static 'main.js' %}"></script>
+</html>
