@@ -3,8 +3,8 @@ from django.contrib.auth.models import User
 
 from datetime import datetime
 
-from apps.postmain.category.models import Category
-from apps.postmain.textgenre.models import TextGenre
+from pres.apps.postmain.category.models import Category
+from pres.apps.postmain.textgenre.models import TextGenre
 
 # Create your models here.
 
