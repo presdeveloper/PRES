@@ -1,0 +1,150 @@
+{% extends '_base_user.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container">
+          <div class="row"> 
+            <div class="col-2">
+              <b>ESCOLHA SUA PRIVACIDADE</b>
+              <br>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <hr>
+              <br>
+              <b>ESCOLHA SUA CATEGORIA</b>
+              <br>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <hr>
+              <br>
+              <b>ESCOLHA SUA GENERO</b>
+              <br>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+              <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">TEXTO</label>
+              </div>
+
+            </div>
+            <div class="col-7">
+              <input type="text" name="" id="" class="form-control" placeholder="Digite seu titulo aqui">
+              <br>
+                <textarea name="content" id="editor">
+                   aa
+                </textarea>
+               
+                <script>
+                    ClassicEditor
+                        .create( document.querySelector( '#editor' ) )
+                        .catch( error => {
+                            console.error( error );
+                        } );
+                </script>
+            
+            <br><br>
+            <div class="text-right">
+            <button type="button" class="btn btn-danger col-4">Excluir</button>
+            <button type="button" class="btn btn-secondary col-4">Rascunho</button>
+            <button type="button" class="btn btn-success col-3">Pres</button>
+          </div>
+
+            </div>
+            <div class="col-3">
+              <ul class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Rascunho 1</h5>
+                        <small>3 dias atrás</small>
+                      </div>
+                      <p class="mb-1">Lorem ipsum dolor sit amet...</p>
+                      <small>Editado há 5 horas trás</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Rascunho 2</h5>
+                          <small>3 dias atrás</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet...</p>
+                        <small>Editado há 5 horas trás</small>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Rascunho 3</h5>
+                            <small>3 dias atrás</small>
+                          </div>
+                          <p class="mb-1">Lorem ipsum dolor sit amet...</p>
+                          <small>Editado há 5 horas trás</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Rascunho 4</h5>
+                              <small>3 dias atrás</small>
+                            </div>
+                            <p class="mb-1">Lorem ipsum dolor sit amet...</p>
+                            <small>Editado há 5 horas trás</small>
+                          </a>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+{% endblock %}

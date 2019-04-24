@@ -1,6 +1,8 @@
 from django.urls import path, include
-from .views_list import FeedGeneral
+from .views_list import FeedGeneral, CreatePost
 
 urlpatterns = [
-    path('feed-geral/', FeedGeneral.as_view())
+    path('feed-geral/', FeedGeneral.as_view()),
+    path('postar/', CreatePost.as_view())
+
 ]
