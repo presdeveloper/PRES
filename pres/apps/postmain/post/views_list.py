@@ -23,4 +23,9 @@ class CreatePost(View):
         return render(request, self.template_name)
 
     def post(self, request):
-        pass
+        post_text = request.POST.get('text')
+
+        post_text_done = post_text[3:-4]
+
+        print(post_text_done)
+        return render(request, self.template_name)

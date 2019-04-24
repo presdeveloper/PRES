@@ -88,25 +88,27 @@
             <div class="col-7">
               <input type="text" name="" id="" class="form-control" placeholder="Digite seu titulo aqui">
               <br>
-                <textarea name="content" id="editor">
-                   aa
-                </textarea>
-               
-                <script>
-                    ClassicEditor
-                        .create( document.querySelector( '#editor' ) )
-                        .catch( error => {
-                            console.error( error );
-                        } );
-                </script>
-            
-            <br><br>
-            <div class="text-right">
-            <button type="button" class="btn btn-danger col-4">Excluir</button>
-            <button type="button" class="btn btn-secondary col-4">Rascunho</button>
-            <button type="button" class="btn btn-success col-3">Pres</button>
-          </div>
-
+              	<form method='post' action="{% url 'create_post' %}">
+              		{% csrf_token %}
+	                <textarea name="text" id="editor">
+	                   aa
+	                </textarea>
+	               
+	                <script>
+	                    ClassicEditor
+	                        .create( document.querySelector( '#editor' ) )
+	                        .catch( error => {
+	                            console.error( error );
+	                        } );
+	                </script>
+	            
+	            	<br><br>
+	            	<div class="text-right">
+	            		<button type="button" class="btn btn-danger col-4">Excluir</button>
+	            		<button type="button" class="btn btn-secondary col-4">Rascunho</button>
+	            		<button type="submit" class="btn btn-success col-3">Pres</button>
+          			</div>
+            	</form>
             </div>
             <div class="col-3">
               <ul class="list-group">
